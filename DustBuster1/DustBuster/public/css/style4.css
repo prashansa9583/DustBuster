@@ -1,0 +1,226 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');  */
+
+/* index page styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+ *{
+     margin: 0;
+     /* margin-right: 50px; */
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     
+ }
+
+ body {
+    /* background-image: url("https://wallpaperaccess.com/full/1912151.jpg"); */
+    /* background-image: url("https://www.rocketlawyer.com/blog/wp-content/uploads/2015/10/default-lawyer-2992-1571-c.jpg"); */
+    background-color:#F7EDE2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+body.main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+     transition: 0.5s;
+     margin-top: 50px;
+
+ }
+
+ /* body.main.active{
+     background: #f43648;
+ } */
+
+ .container{
+     position: relative;
+     width: 800px;
+     height: 500px;
+     margin: 20px;
+     
+ }
+
+ .blueBg{
+     position: absolute;
+     top: 40px;
+     width: 100%;
+     height: 420px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #081C15;
+     box-shadow: 0  5px 45px rgba(0, 0, 0, 0.15);
+
+ }
+
+ .blueBg .box{
+     position: relative;
+     width: 60%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .blueBg .box h2{
+     color: #FAF6F6;
+     font-size: 1.2em;
+     font-weight: 500;
+     margin-bottom: 10px;
+ }
+
+ .blueBg .box button{
+     cursor: pointer;
+     padding: 10px 20px;
+     background: #fff;
+     color: rgb(0, 0, 0);
+     font-size: 16px;
+     font-weight: 500;
+     border: none;
+ }
+
+ .formBx{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 800px;
+      height: 500px;
+      background: #081C15;
+      color: rgb(0, 0, 0);
+      background-image: url("login.jpg");
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+
+ }
+
+ .formBx.active{
+     left: 50%;
+ }
+ 
+ .formBx .form{
+     position: absolute;
+     left: 0;
+     width: 100%;
+     padding: 50px;
+     transition: 0.5s;
+ } 
+
+ .formBx .signinForm{
+     transition-delay: 0.25s;
+ }
+
+ .formBx.active .signinForm{
+     left: -100%;
+     transition-delay: 0s;
+ }
+
+ .formBx .signupForm{
+     left: 100%;  
+     transition-delay: 0s;
+
+ }
+
+ .formBx.active .signupForm{
+    left: 0;  
+ }
+
+ .formBx .form form{
+     width: 75%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .formBx .form form h3{
+     font-size: 1.5em;
+     color: #FAF6F6;
+     margin-bottom: 20px;
+     font-weight: 500;
+ } 
+
+ .formBx .form form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 17px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    height: 52px;
+ }
+
+ 
+ .formBx .form form .forgot{
+     color: #FAF6F6;
+     
+ }
+ 
+ @media(max-width: 991px){
+     .container{
+         max-width: 400px;
+         height: 650px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .container .blueBg{
+         top: 0;
+         height: 100%;
+     }
+     .formBx{
+         width: 100%;
+         height: 500px;
+         top: 0;
+         box-shadow: none;
+     }
+     .blueBg .box{
+         position: absolute;
+         width: 100%;
+         height: 150px;
+         bottom: 0;
+     }
+     .box.signin{
+         top: 0;
+     }
+     .formBx.active{
+         left: 0;
+         top: 150px;
+     }
+ }
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  .vl {     /*for vertical lines*/
+    border-left: 1px solid rgb(218, 211, 211);
+    height: 250px;
+  }
+
+  .someText{
+    height: 265px;
+    width: 550px;
+    background-color: #081C15;
+    color:#FAF6F6;
+    margin-bottom: 20px;
+    border-radius: 11px;
+  }
+
+  .text{
+      padding: 21px;;
+      font-size: 19px;
+      color: #FAF6F6;
+  }
